@@ -1,0 +1,21 @@
+dataset_version: "0.1.0"
+global_seed: 42
+num_latent_series: 100
+renderings_per_series: 2
+curve_grid_size: 128
+num_workers: 1
+save_components: true
+split_ratios:
+  train: 0.8
+  validation: 0.1
+  test: 0.1
+signal:
+  min_points: 32
+  max_points: 96
+  irregular_x_probability: 0.25
+rendering:
+  widths_px: [640, 800, 1024]
+  heights_px: [480, 600, 768]
+  dpis: [80, 100, 120]
+  transparent: false
+
